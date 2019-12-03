@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Characters page</h1>
+
+    <input type="submit" value="first Character"> 
+    <input type="submit" value="first Character"> 
+    <input type="submit" value="first Character"> 
+    <script>
+
+        
+    var btn = document.getElementsByTagName("input")
+    // for (let index = 0; index < btn.length; index++) {
+       
+    //     btn[index].addEventListener("click",()=>{
+    //         window.location = "index.html"
+    //     }) 
+    // }
+    btn[0].addEventListener("click", function(){
+        window.location = "index.html?character=1"
+    });
+
+    btn[1].addEventListener("click", function(){
+        window.location = "index.html?character=2"
+    });
+       
+    btn[2].addEventListener("click", function(){
+        window.location = "index.html?character=3"
+    });
+       
+
+
+    </script>
+</body>
+</html>
